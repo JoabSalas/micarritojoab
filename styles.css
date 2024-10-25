@@ -1,0 +1,132 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif; /* Fuente para el texto */
+    margin: 0; /* Sin márgenes */
+    padding: 0; /* Sin relleno */
+    background-color: #c7c7c7; /* Color de fondo */
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 15px; /* Relleno alrededor del texto */
+    text-align: center; /* Alinear texto al centro */
+}
+/* Estilo para el título */
+.titulo {
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    font-size: 2.5rem; /* Tamaño de fuente grande */
+    color: #ffffff; /* Color blanco */
+    text-transform: uppercase; /* Transformar a mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra sutil para efecto 3D */
+    transition: transform 0.3s, color 0.3s; /* Transición suave */
+    margin-left: 120px; /* Espacio a la izquierda para el logo */
+}
+
+/* Efecto al pasar el mouse sobre el título */
+.titulo:hover {
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+    color: #ff0000; /* Cambiar el color al pasar el mouse */
+}
+
+/* Estilos del contenido principal */
+main {
+    display: flex; /* Utiliza flexbox para diseño */
+    justify-content: space-around; /* Espacio entre secciones */
+    padding: 20px; /* Relleno alrededor del contenido */
+}
+
+/* Estilos de la sección de productos */
+.productos {
+    flex: 1; /* Toma un espacio flexible */
+    margin-right: 20px; /* Margen derecho */
+}
+
+/* Estilo individual de cada producto */
+.producto {
+    background: #fff; /* Fondo blanco */
+    padding: 100px; /* Relleno alrededor del contenido */
+    margin-bottom: 15px; /* Margen inferior */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para efecto 3D */
+    transform: perspective(1000px) translateZ(0); /* Perspectiva 3D */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición suave */
+    max-width: 250px; ;
+    text-align: center;
+    padding: 0; /* Sin relleno */
+}
+
+/* Efecto al pasar el mouse sobre el producto */
+.producto:hover {
+    transform: translateY(-10px) translateZ(20px); /* Levantar el elemento */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Sombra más intensa */
+}
+
+/* Estilos de la sección del carrito */
+.carrito {
+    flex: 1; /* Toma un espacio flexible */
+    background: #fff; /* Fondo blanco */
+    padding: 15px; /* Relleno alrededor del contenido */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra para efecto 3D */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición suave */
+    max-width: 250px; ;
+    height: 400px;
+    overflow-y: auto; /* Permitir desplazamiento vertical */
+}
+
+/* Efecto al pasar el mouse sobre el carrito */
+.carrito:hover {
+    transform: translateY(-10px) translateZ(20px); /* Levantar el elemento */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Sombra más intensa */
+}
+
+/* Estilo de los botones */
+button {
+    background-color: #28a745; /* Color verde */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Relleno interno */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s; /* Transición suave del color */
+}
+
+/* Cambiar color del botón al pasar el mouse */
+button:hover {
+    background-color: #218838; /* Color verde más oscuro */
+}
+
+/* Estilo del pie de página */
+footer {
+    text-align: center; /* Alinear texto al centro */
+    padding: 10px 0; /* Relleno vertical */
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    position: relative; /* Posición relativa */
+    bottom: 0; /* Posicionarlo al fondo */
+    width: 100%; /* Ancho completo */
+    
+
+}
+/* Estilo para las imágenes de los productos */
+.producto img {
+    max-width: 100%; /* Hacer que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(255, 0, 0, 0.1); /* Sombra para efecto 3D */
+    margin-bottom: 9px; /* Espacio debajo de la imagen */
+}
+/* Estilo para el logo */
+.logo {
+    max-width: 132px; /* Ajusta el ancho máximo según tu preferencia */
+    position: absolute; /* Posición absoluta para el logo */
+    top: 0; /* Coordenada vertical en 0 */
+    left: 0; /* Coordenada horizontal en 0 */
+
+    height: auto; /* Mantener la proporción de la imagen */
+}
+/* Estilo para las imágenes en el carrito */
+.imagen-carrito {
+    max-width: 0px; /* Ajustar el tamaño según tu preferencia */
+    margin-right: 10px; /* Espacio a la derecha de la imagen */
+}

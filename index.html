@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras 3D</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="logo1.jpg" alt="Logo" class="logo"> <!-- Imagen del logo -->
+       
+        <h1 class="titulo">SKULL SUPPLEMENTS STORE</h1> <!-- Título de la página -->
+      
+    </header>
+    <main>
+        <section class="productos">
+            <h2>Productos</h2>
+            <div class="producto">
+                <img src="imagen1.jpg" alt="Producto 1"> <!-- Imagen del producto -->
+                <h3>PROTEINA</h3>
+                <p>Descripción breve del producto 1.</p>
+                <span>$1000.00</span>
+                <button class="añadir-carrito" data-id="1" data-nombre="Producto 1" data-precio="1000.00" data-imagen="imagen1.jpg">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+
+            </div>
+            <div class="producto">
+                <img src="imagen2.jpg" alt="Producto 2"> <!-- Imagen del producto -->
+                <h3>CREATINA</h3>
+                <p>Descripción breve del producto 2.</p>
+                <span>$700.00</span>
+                <button class="añadir-carrito" data-id="1" data-nombre="Producto 2" data-precio="700.00" data-imagen="imagen2.jpg">Añadir al carrito</button> <!-- Botón para añadir al carrito -->
+            </div>
+            <!-- Agrega más productos aquí con sus imágenes -->
+        </section>
+
+        <section class="carrito">
+            <h2>Tu Carrito</h2>
+            <ul id="lista-carrito">
+                <!-- Aquí se mostrarán los productos añadidos al carrito -->
+            </ul>
+            <p id="total">Total: $0.00</p> <!-- Total de la compra -->
+            <button id="comprar">Comprar</button> <!-- Botón para realizar la compra -->
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tu Tienda Online</p> <!-- Pie de página -->
+    </footer>
+
+    <script src="script.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+</html>
